@@ -1,22 +1,18 @@
 import React from 'react';
 import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter } from "react-router-dom";
 import AppRoutes from '../../routes/AppRoutes';
 import store from "../../store/store";
-// import { AppRouters, ROUTES } from '../../app.router';
+
 
 
 function App() {
 
   return (
     <Provider store={store}>
-      <Router>
-
-
-          {/*// <AppRouters routes={ROUTES} />*/}
+      <HashRouter basename={process.env.PUBLIC_URL}>
           <AppRoutes />
-
-      </Router>
+      </HashRouter>
     </Provider>
   );
 }
