@@ -1,0 +1,7 @@
+@import "./src/shared/styles/scss/shared";
+
+.cardPage {
+  &__funtionalItems {
+    @include flex(space-around, center)
+  }
+}

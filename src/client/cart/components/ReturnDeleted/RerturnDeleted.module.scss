@@ -1,0 +1,17 @@
+@import "./src/shared/styles/scss/shared";
+
+.returnDeleted {
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  @include flex(space-around, center);
+  padding: 30px 60px;
+  margin-bottom: 12px;
+  @include font-source-sans(24px, false, 500);
+  &__productInfo{
+    @include font-source-sans(24px, false, 700);
+  }
+  &__icon{
+    display: inline-block;
+    transform: scaleY(-1);
+  }
+}

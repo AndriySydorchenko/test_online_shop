@@ -1,0 +1,8 @@
+@import "./src/shared/styles/scss/shared";
+
+.productPage {;
+  @include flex(space-around, start)
+  &__link {
+    display: block;
+  }
+}
