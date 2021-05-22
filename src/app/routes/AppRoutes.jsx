@@ -14,7 +14,6 @@ const AppRoutes = () => {
     const compare = JSON.parse(localStorage.getItem('compare'));
     const dispatch = useDispatch();
     if (cart) dispatch(addProduct(...cart))
-    console.log(compare);
     if (compare) {
         compare.map( item => dispatch(addProductToCompare(item)))
     }
