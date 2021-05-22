@@ -1,0 +1,12 @@
+@import "../../../styles/scss/shared";
+
+.newProduct{
+  @include font-source-sans(14px, #ffff, 500);
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  //width: 71px;
+  border-radius: $block-border-radius;
+  background-color: $secondary-color;
+}
